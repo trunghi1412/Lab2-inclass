@@ -1,0 +1,241 @@
+.pro-ex {
+    font-family: Arial;
+    margin: 0;
+  }
+  .profile-page {
+    display: flex;
+    flex-direction: column;
+  }
+  .profile-me {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 15px;
+    padding-bottom: 40px;
+    border-style: solid;
+    border-color: rgba(82, 79, 79, 0.521);
+    border-width: 0.3px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+  .pro-name {
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(96, 197, 163);
+    text-align: center;
+  }
+  .student-info {
+    font-size: 12px;
+    color: rgb(165, 164, 164);
+    padding-top: 15px;
+    padding-left: 10px;
+  }
+  .about-pic-detail {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+  }
+  .about-me {
+    display: block;
+    width: 33%;
+    margin-left: 15px;
+  }
+  .abt-me-name {
+    font-size: 23px;
+    color: rgb(96, 197, 163);
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .abt-me-detail {
+    font-size: 10px;
+    line-height: 15px;
+  }
+  .profile-avt {
+    width: 28%;
+    margin: 15px;
+    justify-items: center;
+  }
+  .detail-me {
+    font-size: 10px;
+    line-height: 15px;
+  }
+  .my-infor-bold {
+    font-weight: bolder;
+  }
+  .exp-page {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(248, 228, 204);
+  }
+  .exp-name {
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(96, 197, 163);
+    padding-top: 15px;
+    text-align: center;
+    padding-bottom: 15px;
+    border-style: solid;
+    border-color: rgba(82, 79, 79, 0.471);
+    border-width: 0.3px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+  .edu-infor {
+    margin-left: 15px;
+  }
+  .edu-uni {
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+    border-color: rgba(82, 79, 79, 0.471);
+    border-width: 0.3px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+  .my-edu-bold {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 35px;
+  }
+  .my-edu-normal {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  .uni-date {
+    display: block;
+    width: 25%;
+  }
+  .infor-sys {
+    display: block;
+    width: 75%;
+  }
+  .skill-name {
+    font-size: 33px;
+    color: rgb(96, 197, 163);
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-inline-start: 40px;
+  }
+  .check-language-table {
+    padding-inline-start: 0px;
+  }
+  .skill-languages {
+    width: 50%;
+  }
+  .check-language {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .check-mark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+  }
+  .all-check-box {
+    display: flex;
+    flex-direction: row;
+  }
+  .container:hover input,
+  .check-mark {
+    background-color: #ccc;
+  }
+  .container input:checked,
+  .check-mark {
+    background-color: rgb(96, 197, 163);
+  }
+  .check-mark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .container input:checked,
+  .check-mark:after {
+    display: block;
+  }
+  .container .check-mark:after {
+    top: 3px;
+    left: 3px;
+    width: 9px;
+    height: 9px;
+
+    background: white;
+  }
+  .container-no {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .container-no input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .all-skill-languages {
+    display: flex;
+    flex-direction: row;
+  }
+  .github-line {
+    font-style: italic;
+    color: rgb(150, 140, 140);
+    text-align: center;
+  }
+  .github-button {
+    margin-left: 42%;
+    margin-top: 15px;
+    padding: 8px 8px;
+    background-color: rgb(73, 172, 139);
+    border-radius: 5px;
+    border-style: none;
+    color: #eee;
+    cursor: pointer;
+    margin-bottom: 40px;
+  }
+  .abi-page {
+    border-style: solid;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-width: 0.2px;
+    margin-top: 50px;
+  }
